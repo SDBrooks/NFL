@@ -1,1 +1,1 @@
-# NFL
+# NFL Trivia
