@@ -3,7 +3,6 @@
 // Create a function to see if our answer is correct
 // make button to go to next question
 
-
 let questions = [
     {
         question: "What year was the National Football League founded?",
@@ -14,7 +13,6 @@ let questions = [
         correctAnswer: "1920",
     
     },
-
     {
         question: "How many teams are in the NFL?",
         answer1: "32",
@@ -24,7 +22,6 @@ let questions = [
         correctAnswer: "32",
     
     },
-
     {
         question: "Out of the 32 teams in the NFL, how many have never made a Super Bowl appearance?",
         answer1: "4",
@@ -34,7 +31,6 @@ let questions = [
         correctAnswer: "4",
     
     }, 
-
     {
         question: "The NFL houses one of the most valuable franchises in the world of sports, valued well over $5B. Which franchise is it?",
         answer1: "Green Bay Packers",
@@ -44,7 +40,6 @@ let questions = [
         correctAnswer: "Dallas Cowboys",
 
     },
-
     {
         question: "Which player won the 2021 MVP Award?",
         answer1: "Patrick Mahomes",
@@ -54,18 +49,6 @@ let questions = [
         correctAnswer: "Aaron Rodgers",
 
     },
-
-    {
-        question: "Who was the NFL's leading rusher for the 2021 season?",
-        answer1: "Nick Chubb",
-        answer2: "Jonathan Taylor",
-        answer3: "Joe Mixon",
-        answer4: "Najee Harris",
-        correctAnswer: "Jonathan Taylor (1,811 yards)",
-
-    },
-
-
     {
         question: "Who was the NFL's leading passer for 2021 season?",
         answer1: "Tom Brady",
@@ -96,24 +79,14 @@ let questions = [
 
     },
     {
-        question: "What Receiver has ammassed  receiving yards in the history of the league? ",
-        answer1: "",
-        answer2: "",
-        answer3: "",
-        answer4: "",
-        correctAnswer: "",
+        question: "What Receiver has ammassed the most receiving yards in the history of the league? ",
+        answer1: "Larry Fitzgerald",
+        answer2: "Randy Moss",
+        answer3: "Jerry Rice",
+        answer4: "Terrell Owens",
+        correctAnswer: "Jerry Rice (22,895 yards)",
 
     },
-    {
-        question: "",
-        answer1: "",
-        answer2: "",
-        answer3: "",
-        answer4: "",
-        correctAnswer: "",
-
-    },
-
     {
         question: "Lastly, which 'All Time Great' has 7 Super Bowl rings and more than 80,000 position yards in their career?",
         answer1: "Jerry Rice",
@@ -124,8 +97,6 @@ let questions = [
 
     },
 
-
-
 ]
 
     let question = document.getElementById("question")
@@ -133,30 +104,35 @@ let questions = [
     let answer2 = document.getElementById("answer2")
     let answer3 = document.getElementById("answer3")
     let answer4 = document.getElementById("answer4")
-    let answer5 = document.getElementById("answer5")
-    let answer6 = document.getElementById("answer6")
-    let answer7 = document.getElementById("answer7")
-    let answer8 = document.getElementById("answer8")
-    let answer9 = document.getElementById("answer9")
-    let answer10 = document.getElementById("answer10")
-    let answer11 = document.getElementById("answer11")
-    let answer12 = document.getElementById("answer12")
-    
-    
-    let nextButton = document.getElementById("next")
+  
     let i = 0;
-    question.innerText = questions[i].question
-    answer1.innerText = questions[i].answer1
-    answer2.innerText = questions[i].answer2
-    answer3.innerText = questions[i].answer3
-    answer4.innerText = questions[i].answer4
-    answer5.innerText = questions[i].answer5
-    answer6.innerText = questions[i].answer6
-    answer7.innerText = questions[i].answer7
-    answer8.innerText = questions[i].answer8
-    answer9.innerText = questions[i].answer9
-    answer10.innerText = questions[i].answer10
-    answer11.innerText = questions[i].answer11
-    answer12.innerText = questions[i].answer12
+    let nextButton = document.getElementById("next")
 
-    nextButton.addEventListener("click", () => {i++})
+    const nextQuestion = () => {
+        i++;
+        question.innerText = questions[i].question
+        answer1.innerText = questions[i].answer1
+        answer2.innerText = questions[i].answer2
+        answer3.innerText = questions[i].answer3
+        answer4.innerText = questions[i].answer4
+    }
+   
+     nextButton.addEventListener("click", nextQuestion)
+
+
+
+     function checkAnswer() {
+            if(questions[0] == question.innerText) {
+                answer1.innerText
+
+            }
+
+
+
+     }
+    // each button is going to call a function
+    // this function is going to check if the button we hit is the correct answer or not
+    // if the button we click == our correct answer then we will get points 
+
+
+   
