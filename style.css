@@ -1,7 +1,28 @@
 img { 
-    height: 100px;
+    height: 150px;
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
 }
 
+#question {
+    text-align: center;
+    margin: 55px;
+
+}
+
+#buttons {
+    text-align: center;
+
+}
+
+#next {
+    text-transform: capitalize;
+    margin: 50px 350px ;
+}
+
+#score {
+    text-align: right;
+    padding: 0px 70px 0px 0px;
+}
