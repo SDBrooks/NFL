@@ -1,8 +1,3 @@
-// Write a question with 4 answers
-// Use dom manipulation to get questions on our screen
-// Create a function to see if our answer is correct
-// make button to go to next question
-
 const questions = [
       {
         question: "What year was the National Football League founded?",
@@ -100,10 +95,6 @@ const questions = [
     },
 
 ];
- 
-    // let correct = true;
-    // let incorrect = false;
-
     let scoreBoard = document.getElementById("score")
     let question = document.getElementById("question")
     let answer1 = document.getElementById("answer1")
@@ -134,41 +125,6 @@ const questions = [
    
      nextButton.addEventListener("click", nextQuestion)
 
-    // function correctAnswer () {
-
-    //   if (correctAnswer == questions.innerText) {
-
-    //     alert("You are correct")
-    //   }
-
-    // }
-    //  answerCorrect.addEventListener("click", (correctAnswer) => {
-    //     if(correctAnswer.target.innerText == questions[questionCount].correctAnswer) {
-    //         score += 7;
-    //         scoreCorrect.innerText = score;
-    //         questionCount++;
-    //     }
-
-    // })
-    //  let checkAnswer = (e) => {
-
-    // //  answer1.addEventListener('Click', (e) => {
-    // //     if(e.target.id === answer1) {
-    // //         alert(correct);
-    // //     } else {
-    // //         alert(incorrect);
-    // //     }
-    // // // }) e.target.value
-
-    // answer2.addEventListener('Click', (e) => {
-    //     if(e.target.id === answer2) {
-    //         alert(correct);
-    //     } else {
-    //         alert(incorrect);
-    //     }
-    // })
-
-    // .addEventListener("click", nextQuestion)
     answerCorrect.addEventListener("click", () => {
             if(questions[0].question === question.innerText) {
                 document.getElementById(questions[0].correctAnswer)
@@ -193,80 +149,17 @@ const questions = [
                 answer4.innerText = "23"
             }
             
-            // if(questions[3] == question.innerText) {
-            //     answer1.innerText = "Green Bay Packers"
-            //     answer2.innerText = "Kansas City Chiefs"
-            //     answer3.innerText = "New York Giants"
-            //     answer4.innerText = "Dallas Cowboys"
-            // }
-            // if(questions[4] == question.innerText) {
-            //     answer1.innerText = "Patrick Mahomes"
-            //     answer2.innerText = "Aaron Donald"
-            //     answer3.innerText = "Cooper Kupp"
-            //     answer4.innerText = "Aaron Rodgers"
-            // }
-            // if(questions[5] == question.innerText) {
-            //     answer1.innerText = "Tom Brady"
-            //     answer2.innerText = "Matthew Stafford"
-            //     answer3.innerText = "Aaron Rodgers"
-            //     answer4.innerText = "Patrick Mahomes"
-            // }
-            // if(questions[6] == question.innerText) {
-            //     answer1.innerText = "Kyle Pitts"
-            //     answer2.innerText = "Jaylen Waddle"
-            //     answer3.innerText = "Ja'Marr Chase"
-            //     answer4.innerText = "Najee Harris"
-            // }
-            // if(questions[7] == question.innerText) {
-            //     answer1.innerText = "Las Vegas Raiders"
-            //     answer2.innerText = "Pittsburgh Steelers"
-            //     answer3.innerText = "New England Patriots"
-            //     answer4.innerText = "Indianapolis Colts"
-            // }
-            // if(questions[8] == question.innerText) {
-            //     answer1.innerText = "Larry Fitzgerald"
-            //     answer2.innerText = "Randy Moss"
-            //     answer3.innerText = "Jerry Rice"
-            //     answer4.innerText = "Terrell Owens"
-            // }
-            // if(questions[9] == question.innerText) {
-            //     answer1.innerText = "Jerry Rice"
-            //     answer2.innerText = "Tom Brady"
-            //     answer3.innerText = "Joe Montana"
-            //     answer4.innerText = "Peyton Manning"
-            // }}
-   
-    //     }
-
-            // if() {
-            //     correctAnswer == question.innerText;
-
-            // } if(){
-
-            // }
-
-
-
-        // answer1.addEventListener('Click', () => {
-        //     if(questions[0] === "1920") {
-        //         correct = true; 
-            
-        //     } else {
-        //         incorrect;
-        //     }
-        
-        // })
-
-        // answer2.addEventListener('Click', () => {
-        //     if(questions[1] === "32") {
-        //         correct = true; 
-            
-        //     } else {
-        //         incorrect;
-        //     }
-        
-        // })
-    // each button is going to call a function
-    // this function is going to check if the button we hit is the correct answer or not
-    // if the button we click == our correct answer then we will get points 
-        })
+            if(questions[3] == question.innerText) {
+                answer1.innerText = "Green Bay Packers"
+                answer2.innerText = "Kansas City Chiefs"
+                answer3.innerText = "New York Giants"
+                answer4.innerText = "Dallas Cowboys"
+            }
+            if(questions[4] == question.innerText) {
+                answer1.innerText = "Patrick Mahomes"
+                answer2.innerText = "Aaron Donald"
+                answer3.innerText = "Cooper Kupp"
+                answer4.innerText = "Aaron Rodgers"
+         
+        }
+    })

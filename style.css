@@ -1,29 +1,16 @@
 body {
-    /* background-position: center;
-    background-size: cover; */
     text-align: center;
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
     flex: auto;
-    
 }
-
 img { 
     height: 100px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
-    
-    
+    display: block;    
 }
-
-#question {
-    /* text-align: center; */
-    
-
-}
-
 #buttons {
     text-align: center;
     color: black;
@@ -42,15 +29,12 @@ img {
 #answer4 {
     background-color: white;
 }
-
-
 #next {
     height:40px; 
     width:100px; 
     margin-top: 10px;
     background-color: white;
 }
-
 .scoreBoard {
     text-align: right;
     font-size: 15px;
@@ -60,8 +44,6 @@ img {
       background-color: darkorange;
       padding: 5px;
     }
-      
-
 .scoreBoard {
     color: white;
 }
