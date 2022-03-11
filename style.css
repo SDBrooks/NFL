@@ -1,28 +1,53 @@
+body {
+    /* background-position: center;
+    background-size: cover; */
+    text-align: center;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: auto;
+    
+}
+
 img { 
-    height: 150px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     
+    
 }
 
 #question {
-    text-align: center;
-    margin: 55px;
+    /* text-align: center; */
+    
 
 }
 
 #buttons {
     text-align: center;
+    color: black;
+   
 
 }
 
 #next {
-    text-transform: capitalize;
-    margin: 50px 350px ;
+    height:40px; 
+    width:100px; 
+    margin-top: 10px;
 }
 
 .scoreBoard {
     text-align: right;
     font-size: 15px;
+}
+  p {
+      color: black;
+      background-color: darkorange;
+      padding: 5px;
+    }
+      
+
+.scoreBoard {
+    color: white;
 }
