@@ -19,6 +19,10 @@ A Trello board was used to keep track of the development of "NFL Trivia", you ca
 ### ***Credits***
 Game Development: [Trello](https://trello.com/b/wylFA3fR/nfl-trivia-trello-board)
 
+Game Development 2: [Wireframe](https://trello.com/b/wylFA3fR/nfl-trivia-trello-board)
+
 Markdown Reference: [ia.net](https://ia.net/writer/support/general/markdown-guide)
+
+NFL Trivia: [Surge](https://nfltrivia.surge.sh/)
 
 
