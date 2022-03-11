@@ -27,14 +27,28 @@ img {
 #buttons {
     text-align: center;
     color: black;
-   
 
 }
+#answer1 {
+    background-color: white;
+    
+}
+#answer2 {
+    background-color: white;
+}
+#answer3 {
+    background-color: white;
+}
+#answer4 {
+    background-color: white;
+}
+
 
 #next {
     height:40px; 
     width:100px; 
     margin-top: 10px;
+    background-color: white;
 }
 
 .scoreBoard {
